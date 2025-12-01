@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pixel Pulse Studio</title>
+    <meta name="description" content="Striking digital identities and immersive experiences." />
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="nav-bar">
+            <div class="nav-content">
+                <div class="logo">PIXEL PULSE</div>
+                <nav class="nav-links" aria-label="Primary">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#process">Process</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-label">Studio Portfolio</div>
+                <h1 class="hero-title">Pushing pixels and perceptions—one bold idea at a time.</h1>
+                <p class="hero-subtitle">Driven by curiosity, elevated by intent.</p>
+                <p class="hero-description">
+                    Design isn't just how something looks—it's how it works, feels, and connects. At Pixel Pulse Studio,
+                    striking digital identities and immersive experiences are crafted by blending creativity with
+                    strategy for brands and people ready to make an impact.
+                </p>
+                <a class="hero-cta" href="#projects" aria-label="View work">View Work →</a>
+            </div>
+            <button class="scroll-indicator" aria-label="Scroll to About"
+                onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">↓</button>
+        </section>
+
+        <section id="about" class="about-section section fade-in-section">
+            <div class="section-container">
+                <header class="section-header centered">
+                    <div class="section-label">About</div>
+                    <h2 class="section-title">Driven by curiosity, refined by design.</h2>
+                    <p class="section-subtitle">Purposeful, poetic, and relentlessly iterative.</p>
+                </header>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>With a vision rooted in clarity and a drive for innovation, visual identities and digital
+                            experiences are crafted by blending aesthetics with function, shaped by global influences
+                            and design thinking.</p>
+                        <p>Every pixel and plan is an invitation to see—differently.</p>
+                    </div>
+                    <div class="visual-grid" aria-hidden="true">
+                        <div class="grid-item">
+                            <img src="assets/images/about/about-1.png" alt="Studio impression 1">
+                        </div>
+
+                        <div class="grid-item accent">
+                            <img src="assets/images/about/about-4.png" alt="Studio impression 4">
+                        </div>
+
+                        <div class="grid-item">
+                            <img src="assets/images/about/about-2.png" alt="Studio impression 2">
+                        </div>
+
+                        <div class="grid-item">
+                            <img src="assets/images/about/about-3.png" alt="Studio impression 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section section fade-in-section">
+            <div class="section-container">
+                <header class="section-header">
+                    <div class="section-label">Work</div>
+                    <h2 class="section-title">Strategic design, pixel-perfect execution.</h2>
+                    <p class="section-subtitle">Brand identity, product design, and motion.</p>
+                </header>
+
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/Automotive Campaign/Call to Action 2-01-01.png" alt="Automotive Campaign">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Automotive Campaign</h3>
+                            <div class="project-category">Campaign</div>
+                            <p class="project-description">High-impact visuals designed to drive engagement and brand
+                                loyalty in the automotive sector.</p>
+                            <button class="project-cta" data-project="automotive">View Project →</button>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/Campaign/Campaign Cherry Blossom-01.png" alt="Cherry Blossom Campaign">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Cherry Blossom</h3>
+                            <div class="project-category">Branding</div>
+                            <p class="project-description">A delicate and immersive campaign capturing the essence of
+                                spring and renewal.</p>
+                            <button class="project-cta" data-project="cherry">View Project →</button>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/Film Poster Design/Film Poster.png" alt="Film Poster">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Film Poster Design</h3>
+                            <div class="project-category">Poster Design</div>
+                            <p class="project-description">Cinematic storytelling condensed into a single, powerful
+                                image.</p>
+                            <button class="project-cta" data-project="poster">View Project →</button>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/Newspaper Campaign/Newspaper Ad 1-01.png" alt="Newspaper Campaign">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Newspaper Campaign</h3>
+                            <div class="project-category">Print Media</div>
+                            <p class="project-description">Classic print advertising reimagined for modern impact and
+                                readability.</p>
+                            <button class="project-cta" data-project="newspaper">View Project →</button>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/Travel Brochure/TouristPackage 1-01.png" alt="Travel Brochure">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Travel Brochure</h3>
+                            <div class="project-category">Brochure Design</div>
+                            <p class="project-description">Inviting layouts and imagery that inspire wanderlust and
+                                adventure.</p>
+                            <button class="project-cta" data-project="travel">View Project →</button>
+                            <button class="project-cta" data-project="reels">View Reels →</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="process" class="process-section section">
+            <div class="section-container">
+                <header class="section-header centered">
+                    <div class="section-label">Process</div>
+                    <h2 class="section-title">Every great design starts with a story.</h2>
+                    <p class="section-subtitle">Discovery, play, and precision from start to ship.</p>
+                </header>
+
+                <p class="process-description">From mood boards and sketches to wireframes and animated prototypes, each
+                    stage is crafted and refined to produce work that’s as thoughtful as it is stunning.</p>
+
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">01</div>
+                        <h3>Discovery</h3>
+                        <p>Deep dive into brand vision, audience insights, and the landscape to frame opportunities and
+                            constraints.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">02</div>
+                        <h3>Exploration</h3>
+                        <p>Mood boards, sketches, and exploratory concepts that push boundaries and reveal direction.
+                        </p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">03</div>
+                        <h3>Design</h3>
+                        <p>Wireframes, prototypes, and high-fidelity designs refined to clarity and craft.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">04</div>
+                        <h3>Outcome</h3>
+                        <p>Final assets, style guides, and implementation support for a seamless launch.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section section fade-in-section">
+            <div class="section-container">
+                <header class="section-header centered">
+                    <div class="section-label">Testimonials</div>
+                    <h2 class="section-title">What collaborators say.</h2>
+                </header>
+
+                <div class="testimonials-grid">
+                    <blockquote class="testimonial-card">
+                        <p class="testimonial-text">“They didn’t just design a website—they crafted an
+                            experience that
+                            captured our brand’s essence.”</p>
+                        <footer class="testimonial-author">
+                            <strong>Marin O.</strong>
+                            <span>Founder, Canvas&Co</span>
+                        </footer>
+                    </blockquote>
+                    <blockquote class="testimonial-card">
+                        <p class="testimonial-text">“Exceptional attention to detail and a rare balance
+                            of aesthetics
+                            with functionality.”</p>
+                        <footer class="testimonial-author">
+                            <strong>Priya K.</strong>
+                            <span>Product Lead, Nova</span>
+                        </footer>
+                    </blockquote>
+                    <blockquote class="testimonial-card">
+                        <p class="testimonial-text">“A true creative partner. Every pixel has purpose.”
+                        </p>
+                        <footer class="testimonial-author">
+                            <strong>Alex R.</strong>
+                            <span>Creative Director, Orbit</span>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section section fade-in-section">
+            <div class="section-container">
+                <header class="section-header centered">
+                    <div class="section-label">Contact</div>
+                    <h2 class="section-title">Ready to start a project?</h2>
+                    <p class="section-subtitle">Let's build something extraordinary together.</p>
+                </header>
+                <div class="contact-content centered">
+                    <button class="contact-cta" id="contact-btn">Get in Touch →</button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p>© <span id="year"></span> Pixel Pulse Studio</p>
+                <p class="footer-tagline">Design that connects, performs, and endures.</p>
+            </div>
+        </footer>
+
+        <div id="project-modal" class="modal-overlay">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="gallery-grid" id="gallery-grid">
+                </div>
+        </div>
+
+        <div id="contact-modal" class="modal-overlay">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="contact-modal-content">
+                <h3 class="contact-modal-title">Let's Connect</h3>
+                <p class="contact-modal-subtitle">Feel free to reach out for collaborations or just a friendly hello.
+                </p>
+
+                <div class="contact-options">
+                    <div class="contact-option-card">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value" id="email-text">vigneshsa1435@gmail.com</span>
+                        </div>
+                        <div class="contact-actions">
+                            <a href="mailto:vigneshsa1435@gmail.com" class="action-btn primary"
+                                aria-label="Send Email">Send Mail</a>
+                            <button class="action-btn secondary" id="copy-email-btn"
+                                aria-label="Copy Email">Copy</button>
+                        </div>
+                    </div>
+
+                    <div class="contact-option-card">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <span class="contact-label">Phone</span>
+                            <span class="contact-value" id="phone-text">+91 9606351854</span>
+                        </div>
+                        <div class="contact-actions">
+                            <a href="tel:+919606351854" class="action-btn primary" aria-label="Call Now">Call Now</a>
+                            <button class="action-btn secondary" id="copy-phone-btn"
+                                aria-label="Copy Phone">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Intersection fade-in
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('animate-in');
+                    observer.unobserve(e.target);
+                }
+            });
+        }, {
+            threshold: 0.12
+        });
+
+        document.querySelectorAll('.fade-in-section').forEach(el => observer.observe(el));
+
+        // Gallery Logic - All paths updated to assets/images and assets/videos
+        const projectImages = {
+            automotive: [
+                'assets/images/Automotive Campaign/Call to Action 2-01-01.png',
+                'assets/images/Automotive Campaign/Offer 1-01-01.png',
+                'assets/images/Automotive Campaign/Offer 2-01.png',
+                'assets/images/Automotive Campaign/Vicky New-01-01.png',
+                'assets/images/Automotive Campaign/Concept poster Final.png'
+            ],
+            cherry: [
+                'assets/images/Campaign/Campaign Cherry Blossom-01.png',
+                'assets/images/Campaign/Campaign Cherry Blossom-02.png',
+                'assets/images/Campaign/Campaign Cherry Blossom-03.png',
+                'assets/images/Campaign/Campaign Cherry Blossom-04.png',
+                'assets/images/Campaign/Campaign Cherry Blossom-05.png',
+                'assets/images/Campaign/Campaign Cherry Blossom-06.png',
+                'assets/images/Campaign/Campaign Cherry Blossom-07.png',
+                'assets/images/Campaign/Campaign Cherry Blossom-08.png',
+                'assets/images/Campaign/Campaign Cherry Blossom-09.png',
+                'assets/images/Campaign/Campaign Cherry Blossom-10.png'
+            ],
+            poster: [
+                'assets/images/Film Poster Design/Film Poster.png',
+                'assets/images/Film Poster Design/Live Project(Awareness)1-01.png',
+                'assets/images/Film Poster Design/Toyota Poster Ad-01.png'
+            ],
+            newspaper: [
+                'assets/images/Newspaper Campaign/Newspaper Ad 1-01.png',
+                'assets/images/Newspaper Campaign/Newspaper Solus Ad 1-01.png',
+                'assets/images/Newspaper Campaign/5.Recreate Design-01.png'
+            ],
+            travel: [
+                'assets/images/Travel Brochure/TouristPackage 1-01.png',
+                'assets/images/Travel Brochure/TouristPackage 1-02.png',
+                'assets/images/Travel Brochure/TouristPackage 1-03.png'
+            ],
+            reels: [
+                'assets/videos/reel1.mp4',
+                'assets/videos/reel2.mp4'
+            ]
+        };
+
+        const modal = document.getElementById('project-modal');
+        const galleryGrid = document.getElementById('gallery-grid');
+        const closeBtn = document.querySelector('.modal-close');
+
+        document.querySelectorAll('.project-cta').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const projectId = btn.getAttribute('data-project');
+                if (projectId && projectImages[projectId]) {
+                    e.preventDefault();
+                    openGallery(projectImages[projectId]);
+                }
+            });
+        });
+
+        function openGallery(items) {
+            galleryGrid.innerHTML = '';
+            items.forEach((src, index) => {
+                const item = document.createElement('div');
+                item.className = 'gallery-item';
+                item.style.animationDelay = `${index * 0.1}s`;
+
+                if (src.endsWith('.mp4')) {
+                    const video = document.createElement('video');
+                    video.src = src;
+                    video.controls = true;
+                    video.autoplay = false;
+                    video.loop = true;
+                    video.muted = false;
+                    video.style.width = '100%';
+                    video.style.borderRadius = '8px';
+                    item.appendChild(video);
+                } else {
+                    const img = document.createElement('img');
+                    img.src = src;
+                    img.alt = 'Project Image';
+                    item.appendChild(img);
+                }
+                galleryGrid.appendChild(item);
+            });
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        function closeGallery() {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+            setTimeout(() => {
+                galleryGrid.innerHTML = '';
+            }, 300);
+        }
+
+        closeBtn.addEventListener('click', closeGallery);
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeGallery();
+            }
+        });
+
+        // Contact Modal Logic
+        const contactModal = document.getElementById('contact-modal');
+        const contactBtn = document.getElementById('contact-btn');
+        const closeContactBtn = contactModal.querySelector('.modal-close');
+        const copyEmailBtn = document.getElementById('copy-email-btn');
+        const copyPhoneBtn = document.getElementById('copy-phone-btn');
+        const emailText = document.getElementById('email-text');
+        const phoneText = document.getElementById('phone-text');
+
+        function openContactModal() {
+            contactModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeContactModal() {
+            contactModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        contactBtn.addEventListener('click', openContactModal);
+        closeContactBtn.addEventListener('click', closeContactModal);
+
+        contactModal.addEventListener('click', (e) => {
+            if (e.target === contactModal) {
+                closeContactModal();
+            }
+        });
+
+        function handleCopy(text, btn) {
+            navigator.clipboard.writeText(text).then(() => {
+                const originalText = btn.innerText;
+                btn.innerText = 'Copied!';
+                btn.style.background = '#450693';
+                btn.style.color = '#ffffff';
+                btn.style.borderColor = '#450693';
+
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.style.background = '';
+                    btn.style.color = '';
+                    btn.style.borderColor = '';
+                }, 2000);
+            });
+        }
+
+        copyEmailBtn.addEventListener('click', () => {
+            handleCopy(emailText.innerText, copyEmailBtn);
+        });
+
+        copyPhoneBtn.addEventListener('click', () => {
+            handleCopy(phoneText.innerText, copyPhoneBtn);
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                if (modal.classList.contains('active')) closeGallery();
+                if (contactModal.classList.contains('active')) closeContactModal();
+            }
+        });
+
+        // Auto-update year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
