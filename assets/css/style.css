@@ -66,15 +66,44 @@ body {
     font-size: 0.9rem;
     font-weight: 400;
     cursor: pointer;
-    padding: 0;
+    padding: 0.5rem 0;
     font-family: 'Inter', sans-serif;
     letter-spacing: 0.02em;
     text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links a::after,
+.nav-links button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #450693;
+    transition: width 0.3s ease;
 }
 
 .nav-links a:hover,
 .nav-links button:hover {
     color: #450693;
+}
+
+.nav-links a:hover::after,
+.nav-links button:hover::after {
+    width: 100%;
+}
+
+.nav-links a.active,
+.nav-links button.active {
+    color: #450693;
+}
+
+.nav-links a.active::after,
+.nav-links button.active::after {
+    width: 100%;
 }
 
 /* Hero Section */

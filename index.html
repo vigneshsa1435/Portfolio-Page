@@ -20,7 +20,7 @@
                     <a href="#about">About</a>
                     <a href="#projects">Projects</a>
                     <a href="#process">Process</a>
-                    <a href="#testimonials">Testimonials</a>
+                    <!-- <a href="#testimonials">Testimonials</a> -->
                     <a href="#contact">Contact</a>
                 </nav>
             </div>
@@ -194,7 +194,7 @@
             </div>
         </section>
 
-        <section id="testimonials" class="testimonials-section section fade-in-section">
+        <!-- <section id="testimonials" class="testimonials-section section fade-in-section">
             <div class="section-container">
                 <header class="section-header centered">
                     <div class="section-label">Testimonials</div>
@@ -230,7 +230,7 @@
                     </blockquote>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section id="contact" class="contact-section section fade-in-section">
             <div class="section-container">
@@ -298,6 +298,76 @@
     </div>
 
     <script>
+        // Smooth scroll navigation - track active section
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const sections = document.querySelectorAll('section[id]');
+
+        function updateActiveNavLink() {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (window.pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        // Update on scroll
+        window.addEventListener('scroll', updateActiveNavLink);
+        
+        // Smooth scroll with active state update on click
+        function smoothScrollTo(element, duration = 1200) {
+            const startPosition = window.pageYOffset;
+            const elementPosition = element.offsetTop - 80; // Account for fixed navbar
+            const distance = elementPosition - startPosition;
+            let start = null;
+
+            const animation = (currentTime) => {
+                if (start === null) start = currentTime;
+                const timeElapsed = currentTime - start;
+                const progress = Math.min(timeElapsed / duration, 1);
+                
+                // Easing function for smooth animation (ease-in-out)
+                const ease = progress < 0.5 
+                    ? 2 * progress * progress 
+                    : -1 + (4 - 2 * progress) * progress;
+                
+                window.scrollTo(0, startPosition + distance * ease);
+
+                if (timeElapsed < duration) {
+                    requestAnimationFrame(animation);
+                }
+            };
+
+            requestAnimationFrame(animation);
+        }
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                if (targetSection) {
+                    smoothScrollTo(targetSection, 1200); // 1200ms = medium speed scroll
+                    
+                    // Update active state immediately
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    link.classList.add('active');
+                }
+            });
+        });
+
         // Intersection fade-in
         const observer = new IntersectionObserver(entries => {
             entries.forEach(e => {
